@@ -1,0 +1,599 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+:root {
+	font-size: 16px;
+	--orange-red: #ff4500;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Poppins, sans-serif;
+}
+
+p {
+	line-height: 1.5rem;
+	color: #333;
+}
+
+header {}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+section {
+	padding: 7rem 0 3.5rem 0;
+}
+
+header nav a {
+	color: #000;
+	font-weight: 500;
+	text-decoration: none;
+	transition: color .15s ease-in-out;
+	padding: .5rem;
+}
+
+header nav a:hover {
+	color: var(--orange-red);
+	text-decoration: none;
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 3rem;
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 2.5rem;
+}
+
+h4 {
+	font-size: 1.75rem;
+	font-weight: 500;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.header-info-bar {
+	background-color: #eee;
+	font-size: 12px;
+}
+
+.header-info-bar .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.left-wrap {
+	display: flex;
+	align-items: center;
+	gap: 4.5rem;
+}
+
+.shipping-alert p {
+	display: flex;
+	align-items: center;
+	gap: .75rem;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.demo-settings a {
+	display: flex;
+}
+
+.shipping-icon {
+	width: 16px;
+}
+
+.country-icon {
+	width: 14px;
+    margin-right: .5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.demo-settings {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.demo-settings ul {
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+}
+
+.header-info-bar a {
+	text-decoration: none;
+	color: black;
+	display: flex;
+}
+
+.chev-icon {
+	margin-left: .5rem;
+}
+
+.chev-icon svg {
+	width: 10px;
+}
+
+.li-div {
+	background-color: #ccc;
+	width: 1px;
+	height: .75rem;
+}
+
+.right-wrap {
+	display: flex;
+	align-items: center;
+	gap: 4rem;
+}
+
+.legal-links-wrap {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.legal-links-wrap a {
+	text-decoration: none;
+}
+
+.social-icons-wrap {
+	display: flex;
+	align-items: center;
+}
+
+.social-icons-wrap a {
+	text-decoration: none;
+	padding: .75rem .5rem;
+}
+
+.social-icons svg {
+	height: 14px;
+	width: auto;
+}
+
+.social-icons-wrap svg path {
+	transition: fill .15s ease-in-out;
+}
+
+.social-icons-wrap a:hover svg path {
+	fill: black;
+}
+
+.header-nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.75rem 0;
+}
+
+.logo {
+	font-weight: 700;
+	color: #000;
+	text-decoration: none;
+	font-size: 1.5rem;
+	display: flex;
+}
+
+.logo-icon {
+	width: 24px;
+	margin-right: .5rem;
+}
+
+.logo path {
+	transition: fill .15s ease-in-out;
+}
+
+.logo-hut {
+	transition: color .15s ease-in-out;
+}
+
+a.logo:hover .logo-hut {
+	color: var(--orange-red);
+}
+
+a.logo:hover path {
+	fill: var(--orange-red);
+}
+
+.nav-main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.nav-main li:first-of-type a {
+	color: var(--orange-red);
+	text-decoration: none;
+}
+
+.nav-aside ul {
+	display: flex;
+	align-items: center;
+	gap: .25rem;
+}
+
+.nav-aside a span {
+	display: flex;
+	height: 36px;
+	width: 36px;
+	padding: .5rem;
+}
+
+.nav-aside a span path {
+	fill: black;
+	transition: fill .15s ease-in-out;
+}
+
+.nav-aside a:hover path {
+	fill: var(--orange-red);
+}
+
+.discount-alert {
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 500;
+	background-image: url("../img/diamonds.webp");
+	background-size: 5%;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.discount-alert .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	position: relative;
+}
+
+.discount-alert a {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	color: white;
+	text-decoration: none;
+	position: relative;
+	padding: .75rem 0;
+	justify-content: center;
+	z-index: 1;
+	font-weight: 400;
+}
+
+.discount-alert-starting-icon svg {
+	height: 16px;
+}
+
+.discount-alert-starting-icon svg path {
+	fill: var(--orange-red);
+}
+
+.double-arrows-right-icon svg {
+	height: 16px;
+}
+
+.double-arrows-right-icon svg path {
+	fill: white;
+}
+
+.arrow-right-icon {
+	display: flex;
+}
+
+.arrow-right-icon svg {
+	width: 12px;
+}
+
+.arrow-right-icon svg path {
+	fill: black;
+}
+
+.discount-alert .percent-off {
+	color: var(--orange-red);
+	font-weight: 500;
+	font-size: 1rem;
+}
+
+.discount-code {
+	font-size: 1rem;
+	color: var(--orange-red);
+	padding: .25rem;
+	border: 1px dashed var(--orange-red);
+	font-weight: 500;
+}
+
+.discount-bar-illustration {
+	position: absolute;
+    left: 0;
+    right: -14rem;
+    top: -12.85rem;
+    bottom: 0;
+    width: 400px;
+    margin: 0 auto;
+    mix-blend-mode: overlay;
+}
+
+.discount-bar-illustration svg {
+	width: 100%;
+	position: relative;
+    z-index: 0;
+}
+
+.file-contract-icon {
+	width: 14px;
+}
+
+.file-contract-icon svg path {
+	fill: var(--orange-red);
+}
+
+.shop-categories {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 0;
+}
+
+.shop-categories .grid-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #eee;
+	min-height: 500px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.shop-categories .grid-item h2 {
+	color: white;
+	text-shadow: 0px 0px 35px rgba(0, 0, 0, 1);
+}
+
+.shop-categories .grid-item:nth-of-type(1) {
+	background-image: url("../img/mens-category-cover.webp");
+}
+
+.shop-categories .grid-item:nth-of-type(2) {
+	background-image: url("../img/womens-category-cover.webp");
+}
+
+.shop-categories .grid-item:nth-of-type(3) {
+	background-image: url("../img/kids-category-cover.webp");
+}
+
+.btn-white {
+	background-color: white;
+	padding: 1.25rem 2rem;
+	color: black;
+	text-decoration: none;
+	font-weight: 600;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 2.5rem;
+	width: fit-content;
+	margin: 0 auto;
+	transition: gap .15s ease-in-out;
+}
+
+.btn-white:hover {
+	gap: 1.5rem;
+}
+
+.shopping-perks-wrap {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 4rem;
+	padding: 2.25rem 1rem;
+	border-bottom: 1px solid #ddd;
+	justify-content: center;
+}
+
+.shopping-perks-wrap .grid-item {
+	display: flex;
+	flex-direction: row:;
+	align-items: flex-start;
+	gap: 1.5rem;
+	justify-content: center;
+}
+
+.perk-copy-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: .15rem;
+}
+
+.perk-icon svg {
+	height: 20px;
+}
+
+.perk-icon svg path {
+	fill: var(--orange-red);
+}
+
+.shopping-perks-wrap p:nth-of-type(1) {
+	text-transform: uppercase;
+	font-weight: 600;
+	color: black;
+}
+
+.shopping-perks-wrap p:nth-of-type(2) {
+	font-size: 14px;
+	color: #666;
+	display: flex;
+	flex-direction: column;
+}
+
+.top-picks-copy-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+#section-top-picks .container {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+}
+
+#section-top-picks .heading-lockup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+#section-top-picks .pre-heading {
+	color: #666;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.collections-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 2rem;
+	grid-template-areas:
+		"one two two"
+		"three three four";
+}
+
+.collections-grid .grid-item {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	min-height: 400px;
+	background-color: #eee;
+	padding: 4rem;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+	position: relative;
+	overflow: hidden;
+}
+
+.collections-grid a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.collections-grid .grid-item svg {
+	width: 12px;
+	margin-left: 1rem;
+}
+
+.grid-item-1 {
+	grid-area: one;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../img/womens-summer-wear.webp");
+	background-size: cover;
+	background-position-y: 0rem;
+	background-position-x: 0rem;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, .25);
+}
+
+.grid-item-2 {
+	grid-area: two;
+	color: black;
+	align-items: flex-start!important;
+}
+
+.grid-item-2 img {
+	right: -5rem;
+	top: 0;
+	width: 800px;
+}
+
+.grid-item-2 img, .grid-item-3 img {
+	position: absolute;
+}
+
+.savings-alert {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	background-color: var(--orange-red);
+	padding: 1.25rem;
+	border-radius: 50%;
+	aspect-ratio: 1 / 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+	gap: .25rem;
+	z-index: 1;
+}
+
+.savings-alert span {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.grid-item-3 {
+	grid-area: three;
+	color: black;
+	align-items: flex-start!important;
+}
+
+.grid-item-3 img {
+	right: 5rem;
+	top: -5.5rem;
+	width: 400px;
+}
+
+.grid-item-4 {
+	grid-area: four;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../img/mens-watches.webp");
+	background-size: cover;
+	background-position: center;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, .25);
+}
